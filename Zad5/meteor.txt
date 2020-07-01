@@ -1,0 +1,10 @@
+W powershellu:
+cd 'C:\Users\Konrad\Desktop\Frontend Konrad Michalak\Zad5\leaderboard'
+meteor
+
+http://localhost:3000/
+
+Tutorial
+https://www.meteor.com/tutorials/blaze/templates
+
+Mo¿na sortowaæ po stronie klienta dziêki klasie Rective Dictionary (ui/body.js)

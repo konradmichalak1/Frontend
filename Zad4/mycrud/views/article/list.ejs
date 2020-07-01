@@ -1,0 +1,29 @@
+<h1 class="display-4">Articles</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Nazwa</th>
+            <th>Opis</th>
+            <th></th>
+        </tr> 
+    </thead>
+    <tbody>
+        <% articles.forEach(function(article){ %>
+            <tr>
+                <td><%= article.id %></td>
+                <td><%= article.title %></td>
+                <td><%= article.body %></td>
+                <td>
+                    <form class="d-inline" action="/articles/edit/<%=article.id%>" method="post">
+                        <input type="submit" value="Edit" class="btn btn-primary">
+                    </form>
+                    <form class="d-inline" action="/articles/delete/<%=article.id%>" method="post">
+                        <input type="submit" value="Delete" class="btn btn-danger">
+                    </form>
+                </td>
+            </tr>
+        <% }) %>
+    </tbody>
+
+</table>

@@ -1,0 +1,22 @@
+.paralax-body{
+    margin: 0;
+    background-color: #1d1e22;
+  }
+  #parallax {
+    background-color: #1d1e22;
+    position: relative;
+    width: 100%;
+    min-height: 750px;
+    height:auto;
+
+    background-image: url(../src/golfdepth3.png), url(../src/golfdepth2.png), url(../src/golfdepth1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 50% 50%;
+    background-size: cover;
+    clear: both;
+    z-index: 0;
+
+  }
+
+

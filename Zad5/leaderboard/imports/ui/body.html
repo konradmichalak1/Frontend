@@ -1,0 +1,26 @@
+<body>
+    <div class="container">
+      <header>
+        <h1>Ranking sklepów RTV</h1>
+        <label class="hide-completed">
+          <input type="checkbox" />
+          Sort
+        </label>
+
+        <form class="new-task">
+          <input type="text" name="text" placeholder="Type to add new tasks" />
+        </form>
+
+      </header>
+  
+      <ul>
+        {{#each tasks}}
+          {{> task}}
+        {{/each}}
+      </ul>
+    </div>
+</body>
+  
+<!-- <template name="task">
+  <li>{{text}}</li>
+</template> -->

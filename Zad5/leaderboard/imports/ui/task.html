@@ -1,0 +1,14 @@
+<template name="task">
+
+    <li class="{{#if checked}}checked{{/if}}">
+
+      <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
+  
+      <span class="text">{{text}}</span>
+      <span class="text voterate">{{voterate}}</span>
+      <button class="btn vote-up"><i class="fa fa-thumbs-up"></i>Up</button>
+      <button class="btn vote-down"><i class="fa fa-thumbs-down" ></i>Down</button>
+      <button class="delete">&times;</button>
+
+    </li>
+</template>
